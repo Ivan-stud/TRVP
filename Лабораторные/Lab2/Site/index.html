@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.png">
+		<title>Ales</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/line-awesome.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- loader -->
+		<div class="loader">
+	      	<div class="loading">
+		        <div class="spinner-grow aloader" role="status">
+		      		<span class="sr-only"></span>
+		    	</div>
+		    </div>
+	    </div>
+		<!-- end loader -->
+
+		<!-- navbar -->
+		<div id="navbar" class="navbar navbar-expand-lg justify-content-center align-items-center">
+			<div class="container">
+				 <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			        <i class="la la-bars"></i>
+			    </button>
+
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav nav">
+						<li class="nav-item"><a class="nav-link" href="#" onclick="showErrorAlert('Главная')">Главная</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" onclick="showErrorAlert('О нас')">О нас</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" onclick="showErrorAlert('Галерея')">Галерея</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" onclick="showErrorAlert('Цены')">Цены</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" onclick="showErrorAlert('Контакты')">Контакты</a></li>
+					</ul>
+			    </div>
+			    <ul class="button-navbar">
+			    	<li><a href="#contact" class="button">Присоединяйся</a></li>
+			    </ul>
+			</div>
+		</div>
+		<!-- end navbar -->
+		<!-- intro -->
+		<div id="home" class="intro">
+			<div class="container">
+				<form id="form-search" class="row g-3" method="post" action="#">
+					<div class="col-auto">
+						<input id="text-search" class="form-control" type="text" placeholder="Поиск">
+					</div>
+					<div class="col-auto">
+						<input class="btn btn-primary mb-3" type="submit" value="Найти">
+					</div>
+				</form>
+				<br><br>
+				<div class="content">
+					<div class="row align-items-center">
+
+						<div class="col-md">
+							<div class="content-text">
+								<span>Фитнес клуб</span>
+								<h1>Сделай свое тело здоровым и мускулинным</h1>
+								<div class="entry">
+									<p>Разница между тем, кто ты есть, и тем, кем ты хочешь быть — это то, что ты делаешь</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="content-image">
+								<img src="img/intro.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end intro -->
+		<!-- about -->
+		<div id="about" class="about">
+			<div class="container">
+				<h2>Мы здесь для того, чтобы укрепить здоровье и хотим правильно заниматься фитнесом</h2>
+				<div class="row g-5">
+					<div class="col-md-7">
+						<div class="content-left">
+							<img src="img/about.png" alt="">
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="content-right">
+							<img src="img/about2.png" alt="">
+							<p>Тренировки должны дарить радость, нельзя относиться к тренировкам как изнурительной каторге, на которую приходится идти во имя красивой фигуры и здоровья. Для того чтобы достичь цели и не забросить тренировки, необходимо найти свое направление в фитнесе, которое будет дарить радость и положительные эмоции. В нашем клубе представлен широкий выбор программ, из которых можно выбрать то, что подходит именно тебе!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end about -->
+		<!-- gallery -->
+		<div id="gallery" class="gallery">
+			<div class="container">
+				<h2>Галерея <br> фитнес клуба</h2>
+				<div class="divider"></div>
+				<div class="row g-5">
+					<div class="col-md-4">
+						<a href="img/gallery1.png" class="popup-image"><img src="img/gallery1.png"></a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/gallery2.png" class="popup-image"><img src="img/gallery2.png"></a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/gallery3.png" class="popup-image"><img src="img/gallery3.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end gallery -->
+
+		<!-- pricing -->
+		<div id="pricing" class="pricing">
+			<div class="container">
+				<div class="row g-5">
+					<div class="col-md col-md-left">
+						<div class="content-left">
+							<h2>Выбири <br>тариф</h2>
+							<p>Мы дарим Вам скидку 10% на абонемент в течении 3-х дней до и 3-х дней после дня рождения (активация месячных абонементов в течение 7 календарных дней после покупки</p>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="content">
+							<h4>Месяц</h4>
+							<p>занятий с инструктором</p>
+							<ul>
+								<li><i class="la la-check-circle"></i> Инструктор</li>
+								<li><i class="la la-check-circle"></i> Бесплатная вода</li>
+								<li><i class="la la-check-circle"></i> Скидки в магазине спортпита</li>
+							</ul>
+							<h2>₽2500</h2>
+							<a href="#contact" class="button">Выбрать</a>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="content">
+							<h4>Год</h4>
+							<p>занятий с инструктором</p>
+							<ul>
+								<li><i class="la la-check-circle"></i> Инструктор</li>
+								<li><i class="la la-check-circle"></i> Бесплатная вода</li>
+								<li><i class="la la-check-circle"></i> Скидки в магазине спортпита</li>
+							</ul>
+							<h2>₽25000</h2>
+							<a href="#contact" class="button">Выбрать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end pricing -->
+
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="row g-5">
+					<div class="col-md col-sm-12">
+						<h2>Как попасть</h2>
+						<p>Наш клуб расположен на ул. Пушкарская, в Ленинском район г. Владимира, недалеко от клуба расположен крупный жилой комплекс "Парк университет", а в 100 метрах от нас находится Дворец детского (юношеского) творчества - ДДюТ</p>
+						<div class="row">
+							<div class="col">
+								<div class="icon"><i class="la la-phone"></i></div>
+								<div class="text">
+									<h5>Телефон</h5>
+									<span>+7-987-432-11-11</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="icon"><i class="la la-envelope"></i></div>
+								<div class="text">
+									<h5>Почта</h5>
+									<span> contact@domain.com </span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="icon"><i class="la la-university"></i></div>
+								<div class="text">
+									<h5>Владимир</h5>
+									<span>ул. Пушкарская, д. 22</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md col-sm-12">
+						<div class="open">
+							<h3>Понедельник - Пятница</h3>
+							<span>08:00 - 23.00</span>
+							<h3>Суббота - Воскресенье</h3>
+							<span>09:00 - 24:00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- end contact -->
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md col-sm-6">
+						<ul>
+							<li><a href=""><i class="la la-twitter"></i></a></li>
+							<li><a href=""><i class="la la-instagram"></i></a></li>
+							<li><a href=""><i class="la la-youtube"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md col-sm-6">
+						<div class="cp">
+							<span> Ales © Все права защищены </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<!-- script -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery.filterizr.min.js"></script>
+		<script src="js/magnific-popup.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
