@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интерактивный календарь</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="calendar">
+    <div class="header">
+      <button id="prevMonth">&#8592;</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">&#8594;</button>
+    </div>
+    <table id="calendarTable">
+      <thead>
+        <tr>
+          <th>Пон</th>
+          <th>Вт</th>
+          <th>Ср</th>
+          <th>Чт</th>
+          <th>Пт</th>
+          <th>Сб</th>
+          <th>Вск</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="todo-container" id="todoContainer" style="display: none;">
+    <h3 id="selectedDate"></h3>
+    <div id="todoList"></div>
+    <input type="text" id="todoInput" placeholder="Задача...">
+    <button id="addTodo">Добавить</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

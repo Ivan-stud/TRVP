@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.calendar {
+    margin-top: 20px;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    width: 14.2%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.today {
+    background-color: red;
+    color: white;
+}
+.has-todos {
+    border: 2px solid blue;
+}
+.todo-container {
+    margin-top: 20px;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.todo-container input {
+    width: calc(100% - 30px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.todo-container button {
+    padding: 5px 10px;
+}
+
+th {
+    padding: 0 15px 0 15px
+}
+
+#todoList{
+    margin-bottom: 15px;
+}
