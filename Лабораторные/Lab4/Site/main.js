@@ -58,10 +58,11 @@ function openTodoList(date) {
 
     if (!todos[date] || todos[date].length === 0) {
         todoList.textContent = 'Планы отсутствуют!';
-    } else {
-        todos[date].forEach(task => {
+    } 
+    else {
+        todos[date].forEach((task, i) => {
             const item = document.createElement('div');
-            item.textContent = task;
+            item.textContent = `${++i}) ${task}`;
             todoList.appendChild(item);
         });
     }

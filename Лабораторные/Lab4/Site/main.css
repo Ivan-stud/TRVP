@@ -29,6 +29,11 @@ th, td {
     height: 50px;
     text-align: center;
     border: 1px solid #ddd;
+    cursor: pointer; /* Делает ячейки кликабельными */
+    transition: background-color 0.3s ease; /* Добавляет плавный переход */
+}
+td:hover {
+    background-color: #e0dada; /* Цвет при наведении */
 }
 .today {
     background-color: red;
